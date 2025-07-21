@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+     font-family: "Poppins", sans-serif;
+}
+
+.btn{
+    border-radius: 5px;
+    background: rgb(221, 0, 0);
+    padding: 16px 25px;
+    border: none;
+    color: #fff;
+    font-weight: 600px;
+}
+
+
+
+/* banner-section */
+
+.banner-section{
+    background-color: rgb(22, 22, 22);
+    color: #fff;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    max-width: 1040px;
+    margin: 50px auto;
+    border-radius: 15px;
+}
+
+
+.banner-section .banner-text h1{
+    font-size: 3.725rem;
+    font-weight: 700px;
+    line-height: 70px;
+}
+
+.banner-section .banner-text p{
+    /* font-weight: 400px; */
+    
+}
+.banner-section .banner-text button{
+    margin: 15px 0;
+    /* margin-bottom: 50px; */
+}
+.banner-section .banner-text{
+    /* margin-left: 100px; */
+    max-width: 50%;
+    padding-left: 40px;
+}
+.banner-section .banner-image{
+    max-width: 50%;
+}
+.banner-section .banner-image img{
+        width: 100%;
+        display: block;
+}
+
+
+
+/* main */
+main{
+     max-width: 1040px;
+    margin: 50px auto;
+}
+
+/* card-section-button */
+
+.card-section{
+    display: flex;
+    gap: 55px;
+
+}
+.card-section .card-section-buttons{
+    /* flex:1; */
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    background: rgb(22, 22, 22);
+    height: fit-content;
+    padding: 30px;
+  
+}
+.card-section .card-section-buttons button:nth-child(1),
+.card-section .card-section-buttons button:nth-child(2){
+    background-color:#fff;
+    color: #000;
+}
+
+.card-section .card-section-cards{
+    flex: 1;
+    /* width: 75%; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    
+}
+
+.card-section .card-section-cards{}
+.card-section .card-section-cards .card-section-cards-card {
+    border: 1px solid rgb(210, 208, 208);
+    
+}
+.card-section .card-section-cards .card-section-cards-card .card-body{
+    padding: 10px;
+}
+.card-section .card-section-cards .card-section-cards-card .card-body .span{ display: flex;
+    gap: 30px;    
+}
+.card-section .card-section-cards .card-section-cards-card img{
+    width: 100%;
+    height: 170px;
+    border-radius: 10px 10px 0px 0px;
+
+/* background: url(Egypt-Senegal-1024x683); */
+}
+
+
+/* footer */
+
+footer{
+   background-color: rgb(22, 22, 22);
+   color: #fff;
+  
+}
+
+footer h5{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+    padding: 50px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+}
+footer ul{
+    display: flex;
+    
+    justify-content: space-around;
+    max-width: 850px;
+    margin: auto;
+     padding: 50px 0;
+    
+
+}
+footer ul li{
+    
+}
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+   
+}
+
+
+
+/* for laptop */
+@media screen and (max-width:992px){
+  .banner-section{
+      margin: 10px 20px;
+
+  }
+  .card-section{
+    margin: 0 20px;
+  }
+
+.banner-section .banner-text{
+
+}
+
+
+/* main */
+  
+.card-section{
+    flex-direction: column;
+    gap: 30px;
+}
+.card-section .card-section-buttons{
+    flex-direction: row;
+    width: 100%;
+    background-color: transparent;
+    /* padding-bottom: 0px; */
+}
+.card-section .card-section-buttons>*{
+    flex: 1;
+}
+.card-section .card-section-buttons .btn{
+     border: 1px solid rgb(232, 232, 232);
+}
+
+/* card */
+.card-section .card-section-cards{
+    /* flex: 1; */
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    
+}
+
+
+
+}
+
+
+/* for mobile */
+@media screen and (max-width:992px){
+  .banner-section{
+      margin: 5px 10px;
+     flex-direction: column;
+     text-align: center;
+
+  }
+  .card-section{
+    margin: 0 10px;
+  }
+
+
+/* main */
+  
+.card-section{
+    flex-direction: column;
+    gap: 30px;
+}
+.card-section .card-section-buttons{
+    flex-direction: column;
+    width: 100%;
+    background-color: transparent;
+    
+}
+.card-section .card-section-buttons>*{
+    flex: 1;
+}
+.card-section .card-section-buttons .btn{
+     border: 1px solid rgb(232, 232, 232);
+}
+
+/* card */
+.card-section .card-section-cards{
+    /* flex: 1; */
+    grid-template-columns: repeat(1,  1fr);
+    gap: 20px;
+    
+}
+
+
+
+}
+    
